@@ -13,12 +13,9 @@ from pysimulators import Acquisition, FitsArray
 from pysimulators.interfaces.healpy import (
     HealpixConvolutionGaussianOperator)
 from .data import PATH
-from .instrument import QubicInstrument
-from .acquisition import (QubicAcquisition,
-                          PlanckAcquisition,
-                          QubicPlanckAcquisition)
 from .scene import QubicScene
 from .samplings import create_random_pointings, get_pointing
+from .acquisition import QubicPlanckAcquisition,QubicAcquisition, PlanckAcquisition
 
 __all__ = ['compute_freq',
            'QubicPolyAcquisition',
